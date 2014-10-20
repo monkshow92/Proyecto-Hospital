@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<html lang="es">
+<head runat="server">
+<title></title>
+        <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+<meta name="description" content="Place your description here" />
+<meta name="keywords" content="put, your, keyword, here" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="Web-Flash-Template.com - We deliver
+best flash website templates" />
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all"/>
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all"/>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all"/>
+
+
+</head>
+<body id="page1">
+    <form id="form1" runat="server">
+<div class="wrap">
+   <!-- header -->
+   <div class="header">
+   <div class="container">
+         <h1><a href="Main.aspx">Medical Center</a></h1>
+      <div class="nav"> 
+      
+          <asp:ContentPlaceHolder id="Menu" runat="server">
+              <ul>
+                  <li class="m1"><a href="Main.aspx" class="active"><span><b>Inicio</b></span></a></li>
+                  <li class="m2"><a href="Pacientes.aspx"><span><b>Pacientes</b></span></a></li>
+                  <li class="m3"><a href="Doctores.aspx"><span><b>Doctores</b></span></a></li>
+                  <li class="m4"><a href="Citas.aspx"><span><b>Citas</b></span></a></li>
+                  <li class="m5 last"><a href="AcercaDe.aspx"><span><b>Quienes Somos</b></span></a></li>
+              </ul>
+        </asp:ContentPlaceHolder>
+          
+      </div>
+   </div>
+   </div>
+   <div class="container">
+      <!-- aside -->
+      <div class="aside">
+      <div class="inside">
+         <h2>ULTIMAS NOTICIAS</h2>
+         <ul class="news">
+            <li><a href="#">6 de Mayo, 2014</a><strong>Fin del I Periodo</strong>Ultimo dia de clases del I Periodo!</li>
+             <li><a href="#">29 de Abril, 2014</a><strong>Entrega del Proyecto</strong>Entrega del proyecto del tercer parcial de Programacion Comercial.</li>
+            <li><a href="#">28 de Abril, 2014</a><strong>Examen del III Parcial</strong>Examen del tercer parcial de Programacion Comercial.</li>
+         </ul>
+      </div>
+   </div>
+      <!-- content -->
+      <div class="section" id="content">
+         <div class="wrapper">
+             <asp:ContentPlaceHolder ID="MainContent" runat="server">
+
+                 
+
+             </asp:ContentPlaceHolder>
+         </div>
+      </div>
+      <div class="clear"></div>
+   </div>
+</div>
+<!-- footer -->
+<div class="footer">
+   <div class="container">
+      <div class="cont-bot"></div>
+      <div class="inside"> UNAH 2014. Programacion Comercial<br />
+          Roman de las Heras Torres</div>
+   </div>
+</div>
+
+    </form>
+
+</body>
+</html>
